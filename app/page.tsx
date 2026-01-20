@@ -10,8 +10,8 @@ import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="">
-      <div className="mx-auto max-w-7xl">
+    <div className="bg-black">
+      <div className="max-w-7xl mx-auto">
         <Navbar />
       </div>
       <HomeSection />

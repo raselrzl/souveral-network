@@ -24,15 +24,15 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <>
+    <div className="">
       {/* Navbar */}
-      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur max-w-7xl mx-auto">
+      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur max-w-7xl mx-auto border-b">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-16 md:h-20 flex items-center justify-between text-white">
           
           {/* Logo */}
           <div className="flex items-center gap-2">
             <img
-              src="/sr2.png"
+              src="/sov.png"
               alt="Souveral Logo"
               className="w-10 h-10 object-contain"
             />
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
