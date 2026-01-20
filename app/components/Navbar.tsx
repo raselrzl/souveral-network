@@ -9,7 +9,6 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Who We Are", href: "#about" },
   { label: "Companies", href: "#companies" },
   { label: "Investors", href: "#investors" },
 ];
