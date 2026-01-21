@@ -20,7 +20,7 @@ export const HomeSection: React.FC = () => {
           {/* Main Heading (2 lines only) */}
           <h1
             className="
-              text-4xl sm:text-4xl md:text-5xl
+              text-3xl sm:text-4xl md:text-5xl
               font-bold leading-snug uppercase
               bg-linear-to-r from-gray-200 via-gray-400 to-gray-200
               bg-clip-text text-transparent
