@@ -17,9 +17,9 @@ const PROJECTS = [
     href: "/projects/employee-management",
   },
   {
-    title: "Multi-Vendor Application",
+    title: "B2B Car Marketplace",
     desc: "Marketplace infrastructure supporting multiple vendors, payouts, and dashboards.",
-    href: "",
+    href: "https://bilvio.se/",
   },
   {
     title: "Job Marketplace Platform",
