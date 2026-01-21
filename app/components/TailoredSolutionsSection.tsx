@@ -18,9 +18,9 @@ export const TailoredSolutionsSection: React.FC = () => {
               bg-clip-text text-transparent
             "
           >
-            Technology Solutions
-            <br className="hidden sm:block" />
-            Built for Scale & Authority
+            <span className="text-amber-600">Technology Solutions </span>
+            <br className="" />{"   "}
+               Built for Scale & Authority
           </h2>
 
           <p className="text-gray-300 text-base md:text-lg leading-relaxed line-clamp-2">
