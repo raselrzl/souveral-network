@@ -10,7 +10,7 @@ export const HomeSection: React.FC = () => {
 
       <div
         className="absolute inset-0 bg-cover bg-center transform rotate-180"
-        style={{ backgroundImage: `url('/hero111.jpeg')` }}
+        style={{ backgroundImage: `url('/hero22.avif')` }}
       />
 
       {/* Overlay */}
