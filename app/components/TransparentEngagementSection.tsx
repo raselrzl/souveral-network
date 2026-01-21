@@ -22,7 +22,7 @@ const PROJECTS = [
   },
 
   {
-    title: "workforce Management System",
+    title: "Workforce Management System",
     desc: "Internal workforce management including attendance, payroll, and role-based access.",
     href: "/projects/employee-management",
   },

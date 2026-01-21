@@ -5,7 +5,7 @@ export default function PrivacyPolicyPage() {
       <section className="py-16 px-6 bg-black text-white">
       <div className="max-w-7xl mx-auto px-2 md:px-20">
         {/* Date */}
-        <p className="text-xs text-gray-400 mt-10">21-01-2026</p>
+       <p className="text-xs text-gray-400 mt-10">January 21, 2026</p>
 
         {/* Main Heading */}
         <h1 className="text-sm font-bold mb-6">SOUVERAL</h1>

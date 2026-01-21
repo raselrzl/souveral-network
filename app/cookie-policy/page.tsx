@@ -5,7 +5,7 @@ export default function CookiesPolicyPage() {
     <section className="py-16 px-6 bg-black text-white">
       <div className="max-w-7xl mx-auto px-2 md:px-20">
         {/* Date */}
-        <p className="text-xs text-gray-400 mt-10">21-01-2026</p>
+        <p className="text-xs text-gray-400 mt-10">January 21, 2026</p>
         <h1 className="text-sm font-bold mb-6">1. Cookies Policy</h1>
         <p className="text-xs text-gray-300 mb-6">
           Souveral Network and its subsidiaries operate a global ecosystem of media, technology, e-commerce, and digital services.  

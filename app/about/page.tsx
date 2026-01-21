@@ -5,11 +5,7 @@ export default function WhoWeArePage() {
     <section className="py-16 px-6 bg-black text-white h-screen">
       <div className="max-w-7xl mx-auto px-2 md:px-20 ">
         {/* Date */}
-        <p className="text-xs text-gray-400 mt-10">21-01-2026</p>
-
-        {/* Main Heading */}
-        <h1 className="text-sm font-bold mb-6">Who We Are</h1>
-
+        
         {/* Tagline */}
         <h2 className="text-sm font-semibold mb-4">
           One Network. One Standard.
