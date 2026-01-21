@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import { ArrowUpRight } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,8 +39,11 @@ export default function RootLayout({
           {/* Left / Center: copyright */}
           {/* Right: links */}
           <div className="flex flex-wrap justify-center sm:justify-end gap-4">
-            <a href="/about" className="hover:text-white transition">
-              Who we are
+            <a href="/about" className="hover:text-white transition flex">
+              Who we are<ArrowUpRight
+                  className="text-gray-500 group-hover:text-gray-200 transition"
+                  size={20}
+                />
             </a>
             <a href="/cookie-policy" className="hover:text-white transition">
               Cookie Policy
