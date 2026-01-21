@@ -7,6 +7,7 @@ import { TailoredSolutionsSection } from "./components/TailoredSolutionsSection"
 import { TransparentEngagementSection } from "./components/TransparentEngagementSection";
 import { Footer } from "./components/Footer";
 import { WhyChooseSouveralSection } from "./components/WhyChooseSouveralSection";
+import PhilosophySection from "./components/OurPhilosophy";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <TailoredSolutionsSection />
       <WhyChooseSouveralSection />
       <TransparentEngagementSection />
+      <PhilosophySection />
       <Footer />
     </div>
   );

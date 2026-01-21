@@ -6,21 +6,27 @@ import { ArrowUpRight } from "lucide-react";
 
 const PROJECTS = [
   {
+    title: "News & Media Websites",
+    desc: "Global and regional media platforms with editorial control and monetization.",
+    href: "https://www.globaleye.press/",
+  },
+  {
     title: "E-Commerce Platform",
     desc: "A fully featured, scalable online shop supporting product catalogues, checkout, and order management.",
     href: "https://kronstil.store/",
   },
-
-  {
-    title: "Employee Management System",
-    desc: "Internal workforce management including attendance, payroll, and role-based access.",
-    href: "/projects/employee-management",
-  },
-  {
+    {
     title: "B2B Car Marketplace",
     desc: "Marketplace infrastructure supporting multiple vendors, payouts, and dashboards.",
     href: "https://bilvio.se/",
   },
+
+  {
+    title: "workforce Management System",
+    desc: "Internal workforce management including attendance, payroll, and role-based access.",
+    href: "/projects/employee-management",
+  },
+
   {
     title: "Job Marketplace Platform",
     desc: "Hiring and recruitment platforms connecting employers with talent at scale.",
@@ -36,10 +42,10 @@ const PROJECTS = [
     desc: "Automated invoicing, reporting, tax handling, and financial record systems.",
     href: "/",
   },
-  {
-    title: "News & Media Websites",
-    desc: "Global and regional media platforms with editorial control and monetization.",
-    href: "https://www.globaleye.press/",
+   {
+    title: "Advisory & Strategy",
+    desc: "We provide strategic guidance on governance, compliance, structuring, and international growth.",
+    href: "/",
   },
 ];
 
@@ -56,11 +62,11 @@ export const TransparentEngagementSection: React.FC = () => {
             className="
               text-3xl sm:text-4xl md:text-5xl
               font-semibold leading-snug mb-4
-              bg-linear-to-r from-gray-200 via-gray-400 to-gray-200
+              bg-linear-to-r from-gray-200 via-amber-400 to-gray-200
               bg-clip-text text-transparent
             "
           >
-            Projects & Platforms
+            OUR CORE DOMAINS
           </h2>
 
           <p className="text-gray-300 text-base md:text-lg leading-relaxed">
