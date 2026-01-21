@@ -4,7 +4,7 @@ import React from 'react';
 
 export const TwoImageSection: React.FC = () => {
   return (
-    <section className="relative w-full py-20">
+    <section className="relative w-full py-4">
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Image 1 */}
         <div className="relative overflow-hidden rounded-xl h-80 group">
