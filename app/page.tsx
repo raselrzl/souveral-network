@@ -4,9 +4,9 @@ import { HomeSection } from "./components/HomeSection";
 import { ExpertiseSection } from "./components/ExpertiseSection";
 import { TwoImageSection } from "./components/TwoImageSection";
 import { TailoredSolutionsSection } from "./components/TailoredSolutionsSection";
-import { WhyChoosePrimeSection } from "./components/WhyChoosePrimeSection";
 import { TransparentEngagementSection } from "./components/TransparentEngagementSection";
 import { Footer } from "./components/Footer";
+import { WhyChooseSouveralSection } from "./components/WhyChooseSouveralSection";
 
 export default function Home() {
   return (
@@ -18,9 +18,9 @@ export default function Home() {
       <ExpertiseSection />
       <TwoImageSection />
       <TailoredSolutionsSection />
-    {/*   <WhyChoosePrimeSection />
+      <WhyChooseSouveralSection />
       <TransparentEngagementSection />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

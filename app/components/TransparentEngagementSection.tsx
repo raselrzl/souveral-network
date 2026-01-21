@@ -1,116 +1,105 @@
 "use client";
 
 import React from "react";
-import { Check } from "lucide-react";
-import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+
+const PROJECTS = [
+  {
+    title: "E-Commerce Platform",
+    desc: "A fully featured, scalable online shop supporting product catalogues, checkout, and order management.",
+    href: "https://kronstil.store/",
+  },
+
+  {
+    title: "Employee Management System",
+    desc: "Internal workforce management including attendance, payroll, and role-based access.",
+    href: "/projects/employee-management",
+  },
+  {
+    title: "Multi-Vendor Application",
+    desc: "Marketplace infrastructure supporting multiple vendors, payouts, and dashboards.",
+    href: "",
+  },
+  {
+    title: "Job Marketplace Platform",
+    desc: "Hiring and recruitment platforms connecting employers with talent at scale.",
+    href: "/",
+  },
+  {
+    title: "Housing & Real Estate Platform",
+    desc: "Property listing, booking, and management systems for real estate operations.",
+    href: "/",
+  },
+  {
+    title: "Invoice & Billing Management",
+    desc: "Automated invoicing, reporting, tax handling, and financial record systems.",
+    href: "/",
+  },
+  {
+    title: "News & Media Websites",
+    desc: "Global and regional media platforms with editorial control and monetization.",
+    href: "https://www.globaleye.press/",
+  },
+];
 
 export const TransparentEngagementSection: React.FC = () => {
-  // Variants for heading/paragraph
-  const fadeUpVariant = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-  };
-
-  // Variants for boxes
-  const boxVariant = {
-    hidden: { opacity: 0, y: 80 },
-    visible: { opacity: 1, y: 0 },
-  };
-
-  const boxes = [
-    {
-      title: "Consultation",
-      desc: "Initial assessment and strategic planning session for new projects.",
-      items: [
-        "Site feasibility analysis",
-        "Preliminary budget estimation",
-        "Regulatory compliance check",
-        "Strategic roadmap creation",
-      ],
-      button: "Book Assessment",
-    },
-    {
-      title: "Project Management",
-      desc: "Comprehensive oversight for ongoing construction and development projects.",
-      items: [
-        "Dedicated Project Manager",
-        "End-to-end resource management",
-        "Weekly progress reporting",
-        "Quality assurance inspections",
-        "Vendor coordination",
-      ],
-      button: "Request Proposal",
-    },
-    {
-      title: "Enterprise",
-      desc: "Full-scale partnership for large organizations with multiple asset requirements.",
-      items: [
-        "Portfolio-wide strategy",
-        "Priority resource allocation",
-        "Executive dashboard access",
-        "24/7 crisis management support",
-        "Custom API integration",
-      ],
-      button: "Contact Sales",
-    },
-  ];
-
   return (
-    <section id="getcote" className="relative w-full bg-black text-white py-24">
+    <section
+      id="projects"
+      className="relative w-full bg-black text-white py-24"
+    >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Heading */}
-        <motion.div
-          className="max-w-3xl mb-16"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ staggerChildren: 0.2 }}
-        >
-          <motion.h2
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-snug bg-linear-to-r from-yellow-400 via-amber-300 to-white bg-clip-text text-transparent"
-            variants={fadeUpVariant}
-            transition={{ duration: 0.6 }}
+        <div className="max-w-3xl mb-16">
+          <h2
+            className="
+              text-3xl sm:text-4xl md:text-5xl
+              font-semibold leading-snug mb-4
+              bg-linear-to-r from-gray-200 via-gray-400 to-gray-200
+              bg-clip-text text-transparent
+            "
           >
-            Transparent Engagement Models
-          </motion.h2>
-          <motion.p
-            className="text-gray-300 text-lg md:text-xl leading-relaxed"
-            variants={fadeUpVariant}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Choose the level of engagement that best suits your project's scale
-            and complexity.
-          </motion.p>
-        </motion.div>
+            Projects & Platforms
+          </h2>
 
-        {/* Boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {boxes.map((box, index) => (
-            <motion.div
-              key={box.title}
-              className="border border-gray-700 rounded-xl p-8 hover:border-yellow-500 transition"
-              variants={boxVariant}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.3 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+            A selection of digital platforms and systems developed across
+            commerce, media, infrastructure, and enterprise operations.
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {PROJECTS.map((project) => (
+            <Link
+              key={project.title}
+              href={project.href}
+              className="
+                group
+                border border-gray-800
+                rounded-xl
+                p-6
+                hover:border-gray-500
+                transition
+              "
             >
-              <h3 className="text-2xl font-semibold mb-2">{box.title}</h3>
-              <p className="text-gray-300 mb-6">{box.desc}</p>
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-lg md:text-xl font-medium mb-2 text-gray-100">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed text-sm md:text-base">
+                    {project.desc}
+                  </p>
+                </div>
 
-              <ul className="space-y-3 mb-8">
-                {box.items.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <Check className="text-yellow-400 mt-1" size={18} />
-                    <span className="text-gray-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <button className="w-full py-3 border border-yellow-500 text-yellow-400 rounded-full font-semibold hover:bg-yellow-500 hover:text-black transition">
-                {box.button}
-              </button>
-            </motion.div>
+                <ArrowUpRight
+                  className="text-gray-500 group-hover:text-gray-200 transition"
+                  size={20}
+                />
+              </div>
+            </Link>
           ))}
         </div>
       </div>

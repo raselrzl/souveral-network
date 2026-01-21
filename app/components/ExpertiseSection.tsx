@@ -44,25 +44,10 @@ const CAPABILITIES: CapabilityItem[] = [
 export const ExpertiseSection: React.FC = () => {
   return (
     <section id="about" className="relative w-full bg-black text-white py-20">
+      
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
-        {/* Heading */}
-        <div className="max-w-3xl mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4
-            bg-linear-to-r from-gray-200 via-gray-400 to-gray-200
-            bg-clip-text text-transparent">
-            Who We Are
-          </h2>
-
-          <p className="text-gray-300 text-base md:text-lg leading-relaxed line-clamp-3">
-            Souveral Group is a multi-sector holding organization governing
-            independent companies across technology, media, commerce, and
-            digital services—built for authority, scalability, and long-term
-            value creation.
-          </p>
-        </div>
-
-        {/* Capabilities Grid */}
+       {/* Capabilities Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {CAPABILITIES.map((item) => (
             <div

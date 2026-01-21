@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 
 interface NavItem {
   label: string;
@@ -10,7 +9,9 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Companies", href: "#companies" },
+  { label: "Capabilities", href: "#about" },
   { label: "Investors", href: "#investors" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const Navbar: React.FC = () => {
@@ -23,22 +24,25 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="">
+    <>
       {/* Navbar */}
-      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur max-w-7xl mx-auto border-b">
+      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur border-b border-gray-800 max-w-7xl mx-auto">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-16 md:h-20 flex items-center justify-between text-white">
           
-          {/* Logo */}
-          <div className="flex items-center gap-2">
+          {/* Logo + Name */}
+          <div className="flex items-center gap-3">
             <img
               src="/sov.png"
-              alt="Souveral Logo"
-              className="w-10 h-10 object-contain"
+              alt="Souveral Network"
+              className="w-9 h-9 object-contain"
             />
+            <span className="text-sm md:text-base font-semibold tracking-wide">
+              Souveral Network
+            </span>
           </div>
 
-          {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-10 text-sm font-medium">
             {NAV_ITEMS.map((item) => (
               <button
                 key={item.label}
@@ -50,7 +54,7 @@ const Navbar: React.FC = () => {
             ))}
           </div>
 
-          {/* Burger Button (Mobile) */}
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden flex flex-col gap-1.5"
@@ -63,15 +67,15 @@ const Navbar: React.FC = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu (No animation) */}
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed inset-0 z-40 bg-black/90 text-white md:hidden">
-          <div className="p-6 flex flex-col gap-8">
-            
+        <div className="fixed inset-0 z-40 bg-black text-white md:hidden">
+          <div className="p-6 flex flex-col gap-10">
+
             {/* Close */}
             <button
               onClick={() => setIsOpen(false)}
-              className="self-end text-2xl"
+              className="self-end text-2xl text-gray-300 hover:text-white"
             >
               ✕
             </button>
@@ -91,7 +95,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
