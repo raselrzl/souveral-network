@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
-    setIsOpen(false);
+    setIsOpen(false); // close menu after clicking
   };
 
   return (
@@ -54,45 +54,45 @@ const Navbar: React.FC = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button (Hamburger) */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden flex flex-col gap-1.5"
             aria-label="Toggle menu"
           >
-            <span className="w-6 h-0.5 bg-white" />
-            <span className="w-6 h-0.5 bg-white" />
-            <span className="w-6 h-0.5 bg-white" />
+            <span className={`w-6 h-0.5 bg-white transition-transform ${isOpen ? "rotate-45 translate-y-1.5" : ""}`} />
+            <span className={`w-6 h-0.5 bg-white transition-opacity ${isOpen ? "opacity-0" : "opacity-100"}`} />
+            <span className={`w-6 h-0.5 bg-white transition-transform ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`} />
           </button>
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-40 bg-black text-white md:hidden">
-          <div className="p-6 flex flex-col gap-10">
-
-            {/* Close */}
+        <div className="fixed inset-0 z-40 bg-black text-white md:hidden flex flex-col">
+          
+          {/* Close Button */}
+          <div className="flex justify-end p-6">
             <button
               onClick={() => setIsOpen(false)}
-              className="self-end text-2xl text-gray-300 hover:text-white"
+              className="text-3xl text-gray-300 hover:text-white"
             >
               ✕
             </button>
-
-            {/* Links */}
-            <nav className="flex flex-col gap-6 text-lg font-medium">
-              {NAV_ITEMS.map((item) => (
-                <button
-                  key={item.label}
-                  onClick={() => scrollToSection(item.href.substring(1))}
-                  className="text-gray-300 hover:text-white text-left"
-                >
-                  {item.label}
-                </button>
-              ))}
-            </nav>
           </div>
+
+          {/* Menu Links */}
+          <nav className="flex flex-col gap-6 px-6">
+            {NAV_ITEMS.map((item) => (
+              <button
+                key={item.label}
+                onClick={() => scrollToSection(item.href.substring(1))}
+                className="text-gray-300 hover:text-white text-left text-lg font-medium"
+              >
+                {item.label}
+              </button>
+            ))}
+          </nav>
         </div>
       )}
     </>
