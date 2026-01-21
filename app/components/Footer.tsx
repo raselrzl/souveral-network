@@ -55,18 +55,18 @@ export const Footer: React.FC = () => {
 
         {/* Operations */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Operations</h4>
+          {/* <h4 className="text-lg font-semibold mb-4">Operations</h4> */}
 
           <div className="flex items-start gap-3 text-gray-300 mb-6">
-            <MapPin size={20} className="text-gray-400 mt-1" />
+           {/*  <MapPin size={20} className="text-gray-400 mt-1" />
             <span>
               Managed internationally with leadership and core operations based
               in Europe.
-            </span>
+            </span> */}
           </div>
 
           {/* Flags */}
-          <div className="flex items-center gap-6">
+       {/*    <div className="flex items-center gap-6">
             <div className="flex items-center gap-3">
               <img
                 src="swedish.png"
@@ -84,7 +84,7 @@ export const Footer: React.FC = () => {
               />
               <span className="text-sm text-gray-300">Portugal</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
