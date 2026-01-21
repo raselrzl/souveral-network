@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, SquareArrowOutUpRight } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,23 +39,35 @@ export default function RootLayout({
           {/* Left / Center: copyright */}
           {/* Right: links */}
           <div className="flex flex-wrap justify-center sm:justify-end gap-4">
-            <a href="/about" className="hover:text-white transition flex">
-              Who we are<ArrowUpRight
+            <a href="/about" className="hover:text-white transition flex flex">
+              Who we are<SquareArrowOutUpRight
                   className="text-gray-500 group-hover:text-gray-200 transition"
-                  size={20}
+                  size={10}
                 />
             </a>
-            <a href="/cookie-policy" className="hover:text-white transition">
-              Cookie Policy
+            <a href="/cookie-policy" className="hover:text-white transition flex">
+              Cookie Policy<SquareArrowOutUpRight
+                  className="text-gray-500 group-hover:text-gray-200 transition"
+                  size={10}
+                />
             </a>
-            <a href="/investor" className="hover:text-white transition">
-              Investor
+            <a href="/investor" className="hover:text-white transition flex">
+              Investor<SquareArrowOutUpRight
+                  className="text-gray-500 group-hover:text-gray-200 transition"
+                  size={10}
+                />
             </a>
-            <a href="/privacy-policy" className="hover:text-white transition">
-              Privacy Policy
+            <a href="/privacy-policy" className="hover:text-white transition flex">
+              Privacy Policy<SquareArrowOutUpRight
+                  className="text-gray-500 group-hover:text-gray-200 transition "
+                  size={10}
+                />
             </a>
-            <a href="/terms-conditions" className="hover:text-white transition">
-              Terms & Conditions
+            <a href="/terms-conditions" className="hover:text-white transition flex">
+              Terms & Conditions<SquareArrowOutUpRight
+                  className="text-gray-500 group-hover:text-gray-200 transition"
+                  size={10}
+                />
             </a>
           </div>
         </div>

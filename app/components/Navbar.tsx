@@ -30,7 +30,15 @@ const Navbar: React.FC = () => {
       <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur border-b border-gray-800 max-w-7xl mx-auto">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-16 md:h-20 flex items-center justify-between text-white">
           {/* Logo + Name */}
-          <Link href="/" className="flex items-center gap-3">
+          <button
+            onClick={() => {
+              // If already on home page, scroll to top
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              // Optionally, navigate to home page if on another route
+              window.location.href = "/";
+            }}
+            className="flex items-center gap-3"
+          >
             <img
               src="/sov.png"
               alt="Souveral Network"
@@ -39,7 +47,7 @@ const Navbar: React.FC = () => {
             <span className="text-sm md:text-base font-semibold tracking-wide uppercase">
               Souveral
             </span>
-          </Link>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-10 text-sm font-medium">
