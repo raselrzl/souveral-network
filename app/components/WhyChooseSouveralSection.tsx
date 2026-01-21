@@ -11,7 +11,7 @@ export const WhyChooseSouveralSection: React.FC = () => {
                  flex flex-col items-center justify-center"
     >
       {/* Animated box */}
-      <div className="mb-12 flex overflow-x-clip ">
+      <div className="flex overflow-x-clip">
         <DotFillBox /><DotFillBox /><DotFillBox />
       </div>
 

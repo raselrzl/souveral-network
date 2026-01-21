@@ -5,7 +5,7 @@ import { BadgeCheck, ShieldAlert, TrendingUp } from "lucide-react";
 
 export const TailoredSolutionsSection: React.FC = () => {
   return (
-    <section id="solutions" className="relative w-full bg-black text-white py-20">
+    <section id="solutions" className="relative w-full bg-black text-white py-6">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         {/* Section Heading */}
@@ -30,7 +30,7 @@ export const TailoredSolutionsSection: React.FC = () => {
         </div>
 
         {/* Solution Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           
           {/* Card 1 */}
           <div className="relative rounded-xl overflow-hidden border border-gray-800 bg-[#0f0f0f] hover:border-gray-600 transition">

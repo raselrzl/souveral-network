@@ -11,7 +11,7 @@ const philosophyPoints = [
 
 export default function PhilosophySection() {
   return (
-    <section id="philosophy" className="py-20 bg-black border-b border-neutral-800">
+    <section id="philosophy" className="py-2 bg-black border-b border-neutral-800">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Heading */}
         <motion.h2
