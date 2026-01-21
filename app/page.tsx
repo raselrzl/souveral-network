@@ -13,9 +13,7 @@ import WhySouveralSection from "./components/WhySouveralSection";
 export default function Home() {
   return (
     <div className="bg-black">
-      <div className="max-w-7xl mx-auto">
-        <Navbar />
-      </div>
+     
       <HomeSection />
       <ExpertiseSection />
       <TwoImageSection />

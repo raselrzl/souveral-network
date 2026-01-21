@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 interface NavItem {
@@ -28,9 +29,8 @@ const Navbar: React.FC = () => {
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur border-b border-gray-800 max-w-7xl mx-auto">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-16 md:h-20 flex items-center justify-between text-white">
-          
           {/* Logo + Name */}
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <img
               src="/sov.png"
               alt="Souveral Network"
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
             <span className="text-sm md:text-base font-semibold tracking-wide uppercase">
               Souveral
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-10 text-sm font-medium">
@@ -60,9 +60,15 @@ const Navbar: React.FC = () => {
             className="md:hidden flex flex-col gap-1.5"
             aria-label="Toggle menu"
           >
-            <span className={`w-6 h-0.5 bg-white transition-transform ${isOpen ? "rotate-45 translate-y-1.5" : ""}`} />
-            <span className={`w-6 h-0.5 bg-white transition-opacity ${isOpen ? "opacity-0" : "opacity-100"}`} />
-            <span className={`w-6 h-0.5 bg-white transition-transform ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`} />
+            <span
+              className={`w-6 h-0.5 bg-white transition-transform ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}
+            />
+            <span
+              className={`w-6 h-0.5 bg-white transition-opacity ${isOpen ? "opacity-0" : "opacity-100"}`}
+            />
+            <span
+              className={`w-6 h-0.5 bg-white transition-transform ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}
+            />
           </button>
         </div>
       </nav>
@@ -70,7 +76,6 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="fixed inset-0 z-40 bg-black text-white md:hidden flex flex-col">
-          
           {/* Close Button */}
           <div className="flex justify-end p-6">
             <button

@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white border-t border-gray-800">
+    <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Brand */}
         <div>
@@ -57,39 +57,61 @@ export const Footer: React.FC = () => {
 
         {/* Operations */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Let’s Build Something Sustainable</h4>
+          <h4 className="text-lg font-semibold mb-4">
+            Let’s Build Something Sustainable
+          </h4>
 
           <div className="flex items-start gap-3 text-gray-300 mb-6 text-xs">
             <span>
-              Whether you’re an investor, partner, creator, or organization, we welcome collaboration aligned with our vision.
+              Whether you’re an investor, partner, creator, or organization, we
+              welcome collaboration aligned with our vision.
             </span>
           </div>
 
-         <div className="flex flex-col sm:flex-row gap-3 mt-6">
-  
-
-  {/* Discover Opportunities Button */}
-  <Link
-    href="#opportunities"
-    className="flex justify-center items-center px-3 py-1 w-46 border border-yellow-500 text-gray-500 text-sm font-semibold rounded-full shadow hover:bg-gray-500 hover:text-black transition"
-  >
-    Discover Opportunities
-  </Link>
-  {/* Contact Us Button */}
-  <Link
-    href="#contact"
-    className="flex justify-center items-center px-3 py-1 w-36 bg-yellow-500 text-black text-sm font-semibold rounded-full shadow hover:bg-yellow-400 transition"
-  >
-    Contact Us
-  </Link>
-</div>
-
-
+          <div className="flex flex-col sm:flex-row gap-3 mt-6">
+            {/* Discover Opportunities Button */}
+            <Link
+              href="#opportunities"
+              className="flex justify-center items-center px-3 py-1 w-46 border border-yellow-500 text-gray-500 text-sm font-semibold rounded-full shadow hover:bg-gray-500 hover:text-black transition"
+            >
+              Discover Opportunities
+            </Link>
+            {/* Contact Us Button */}
+            <Link
+              href="#contact"
+              className="flex justify-center items-center px-3 py-1 w-36 bg-yellow-500 text-black text-sm font-semibold rounded-full shadow hover:bg-yellow-400 transition"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800 py-6 text-center text-gray-500 text-xs">
+      <div className="border-t border-gray-800 py-6 px-6">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+          {/* Left / Center: copyright */}
+          {/* Right: links */}
+          <div className="flex flex-wrap justify-center sm:justify-end gap-4">
+            <a href="/about" className="hover:text-white transition">
+              About
+            </a>
+            <a href="/cookie-policy" className="hover:text-white transition">
+              Cookie Policy
+            </a>
+            <a href="/investor" className="hover:text-white transition">
+              Investor
+            </a>
+            <a href="/privacy-policy" className="hover:text-white transition">
+              Privacy Policy
+            </a>
+            <a href="/terms-conditions" className="hover:text-white transition">
+              Terms & Conditions
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="text-center sm:text-right mb-2 sm:mb-0 text-[10px] text-gray-200">
         © {new Date().getFullYear()} Souveral Network. All rights reserved.
       </div>
     </footer>
