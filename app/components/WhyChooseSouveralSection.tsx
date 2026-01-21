@@ -17,22 +17,7 @@ export const WhyChooseSouveralSection: React.FC = () => {
 
       {/* Content */}
       <div className="max-w-3xl px-6 md:px-12 text-center">
-        <h2
-          className="
-            text-3xl sm:text-4xl md:text-5xl
-            font-semibold mb-6 leading-snug
-            bg-linear-to-r from-gray-200 via-gray-400 to-gray-200
-            bg-clip-text text-transparent
-          "
-        >
-          Why Souveral Network?
-        </h2>
-
-        <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-16">
-          Souveral is built as a long-term digital holding organization
-          governing technology, media, and platform companies with structure,
-          clarity, and authority.
-        </p>
+       
 
         {/* Item 1 */}
         <div className="mb-12">

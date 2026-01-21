@@ -9,11 +9,12 @@ export const HomeSection: React.FC = () => {
       {/* Background */}
 
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center transform rotate-180"
         style={{ backgroundImage: `url('/hero22.avif')` }}
       />
+
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/70 md:bg-black/80" />
 
       {/* Content */}
       <div className="relative z-10 flex items-center h-full max-w-7xl mx-auto px-6 md:px-12">
@@ -28,7 +29,8 @@ export const HomeSection: React.FC = () => {
             "
           >
             <br className="hidden sm:block" />
-            Building <br/>Scalable Digital <br/> Business Ecosystems
+            Building <br />
+            Scalable Digital <br /> Business Ecosystems
           </h1>
 
           {/* Description (2 lines max) */}

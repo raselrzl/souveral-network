@@ -8,6 +8,7 @@ import { TransparentEngagementSection } from "./components/TransparentEngagement
 import { Footer } from "./components/Footer";
 import { WhyChooseSouveralSection } from "./components/WhyChooseSouveralSection";
 import PhilosophySection from "./components/OurPhilosophy";
+import WhySouveralSection from "./components/WhySouveralSection";
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
       <ExpertiseSection />
       <TwoImageSection />
       <TailoredSolutionsSection />
+      <WhySouveralSection />
       <WhyChooseSouveralSection />
+      
       <TransparentEngagementSection />
       <PhilosophySection />
       <Footer />
