@@ -39,7 +39,7 @@ export default function RootLayout({
           {/* Left / Center: copyright */}
           {/* Right: links */}
           <div className="flex flex-wrap justify-center sm:justify-end gap-4">
-            <a href="/about" className="hover:text-white transition flex flex">
+            <a href="/about" className="hover:text-white transition flex">
               Who we are<SquareArrowOutUpRight
                   className="text-gray-500 group-hover:text-gray-200 transition"
                   size={10}
