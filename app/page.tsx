@@ -13,14 +13,12 @@ import WhySouveralSection from "./components/WhySouveralSection";
 export default function Home() {
   return (
     <div className="bg-black">
-     
       <HomeSection />
       <ExpertiseSection />
       <TwoImageSection />
       <TailoredSolutionsSection />
       <WhySouveralSection />
       <WhyChooseSouveralSection />
-      
       <TransparentEngagementSection />
       <PhilosophySection />
       <Footer />
