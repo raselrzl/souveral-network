@@ -29,7 +29,7 @@ export const TwoImageSection: React.FC = () => {
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center transform transition-transform duration-500 group-hover:scale-105"
-            style={{ backgroundImage: `url('/22pp.gif')` }}
+            style={{ backgroundImage: `url('/share.jpg')` }}
           />
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-black/90" />

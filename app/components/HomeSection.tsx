@@ -1,10 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export const HomeSection: React.FC = () => {
   return (
-    <section className="relative w-full h-screen md:h-[75vh] lg:h-[70vh]">
+    <section className="relative w-full h-[65vh] pt-40">
       {/* Background */}
 
       <div
@@ -16,34 +17,41 @@ export const HomeSection: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-10 flex items-center h-full max-w-7xl mx-auto px-6 md:px-12">
-        <div className="max-w-xl flex flex-col gap-6">
+        <div className="max-w-3xl flex flex-col gap-6">
           {/* Main Heading (2 lines only) */}
           <h1
             className="
-              text-3xl sm:text-4xl md:text-5xl
+              text-2xl sm:text-4xl md:text-5xl
               font-bold leading-snug uppercase
               bg-linear-to-r from-gray-200 via-gray-400 to-gray-200
               bg-clip-text text-transparent
             "
           >
-            <br className="hidden sm:block" /> One
-            <br className="" />
-            Uncompromising Standard!
+            <br className="hidden sm:block" />
+            Building <br/>Scalable Digital <br/> Business Ecosystems
           </h1>
 
           {/* Description (2 lines max) */}
           <p className="text-gray-300 text-base md:text-lg leading-relaxed ">
-            Souveral Group is a multi-sector parent organization operating
-            across media, technology, commerce, and digital services building
-            independent companies.
+            Souveral is a global innovation network and holding structure
+            operating across technology, media, commerce, and digital
+            infrastructure.
           </p>
-           
 
-
-          {/* Philosophy (short & strong) */}
-          <p className="inline-block w-auto text-amber-300 text-xs uppercase tracking-widest py-1">
-            We create standards.
-          </p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-10">
+            <Link
+              href="#schedule"
+              className="px-2 py-1 w-46 bg-yellow-500 text-black font-semibold rounded-full shadow-lg hover:bg-yellow-400 transition text-center"
+            >
+              Explore Souveral
+            </Link>
+            <Link
+              href="#services"
+              className="px-2 py-1 w-30 border text-xs border-yellow-500 text-yellow-500 font-semibold rounded-full shadow-lg hover:bg-yellow-500 hover:text-black transition text-center"
+            >
+              Partner With Us
+            </Link>
+          </div>
         </div>
       </div>
     </section>

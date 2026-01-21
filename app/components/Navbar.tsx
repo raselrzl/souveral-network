@@ -36,8 +36,8 @@ const Navbar: React.FC = () => {
               alt="Souveral Network"
               className="w-9 h-9 object-contain"
             />
-            <span className="text-sm md:text-base font-semibold tracking-wide">
-              Souveral Network
+            <span className="text-sm md:text-base font-semibold tracking-wide uppercase">
+              Souveral
             </span>
           </div>
 
