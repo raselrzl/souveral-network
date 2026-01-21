@@ -53,7 +53,7 @@ export const TransparentEngagementSection: React.FC = () => {
   return (
     <section
       id="companies"
-      className="relative w-full bg-black text-white py-4"
+      className="relative w-full bg-black text-white py-4 mt-10"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Heading */}

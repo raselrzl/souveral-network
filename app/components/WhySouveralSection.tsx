@@ -12,7 +12,7 @@ const reasons = [
 
 export default function WhySouveralSection() {
   return (
-    <section id="why-souveral" className="py-4 bg-black">
+    <section id="why-souveral" className="py-4 bg-black mt-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <motion.h2
