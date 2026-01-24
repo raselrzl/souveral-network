@@ -5,7 +5,8 @@ import React from "react";
 
 export const HomeSection: React.FC = () => {
   return (
-    <section className="relative w-full h-[65vh] pt-40">
+    <section className="relative w-full h-[65vh] pt-40 overflow-hidden">
+
       {/* Background */}
 
       <div
