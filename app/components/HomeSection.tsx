@@ -8,18 +8,23 @@ export const HomeSection: React.FC = () => {
     <section className="relative w-full h-[65vh] pt-40">
       {/* Background */}
 
-     <div
-  className="absolute inset-0 bg-center bg-cover animate-spin"
+      <div
+  className="absolute inset-0 animate-spin"
   style={{
+    animationDuration: "20s",
     backgroundImage: `
-      radial-gradient(circle at center,
-        rgba(0,0,0,0) 55%,
-        rgba(0,0,0,0.6) 70%,
+      radial-gradient(
+        circle at center,
+        rgba(0,0,0,0) 45%,
+        rgba(0,0,0,0.4) 60%,
+        rgba(0,0,0,0.8) 75%,
         rgba(0,0,0,1) 100%
       ),
       url('/home.jpeg')
     `,
-    animationDuration: "90s",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    transform: "scale(1.4)", // 👈 IMPORTANT
   }}
 />
 

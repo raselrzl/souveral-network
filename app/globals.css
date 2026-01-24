@@ -111,3 +111,51 @@ body {
   }
 }
 
+/* 🌩️ Full-screen lightning flash */
+.lightning-flash {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  animation: flash 8s infinite;
+}
+
+/* ⚡ Lightning bolt */
+.lightning-bolt {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  width: 3px;
+  height: 120%;
+  background: linear-gradient(
+    to bottom,
+    white,
+    rgba(255,255,255,0.8),
+    rgba(255,255,255,0.2)
+  );
+  filter: drop-shadow(0 0 20px white);
+  opacity: 0;
+  transform: translateX(-50%) skewX(-10deg);
+  animation: bolt 8s infinite;
+}
+
+/* 🔥 Flash timing */
+@keyframes flash {
+  0%, 92%, 100% { opacity: 0; }
+  93% { opacity: 0.3; }
+  94% { opacity: 0.9; }
+  95% { opacity: 0.2; }
+}
+
+/* ⚡ Bolt timing */
+@keyframes bolt {
+  0%, 92%, 100% {
+    opacity: 0;
+  }
+  93% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+}
