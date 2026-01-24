@@ -6,7 +6,6 @@ import React from "react";
 export const HomeSection: React.FC = () => {
   return (
     <section className="relative w-full h-[65vh] pt-40 overflow-hidden">
-
       {/* Background */}
 
       <div
@@ -58,13 +57,13 @@ export const HomeSection: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 mt-10">
             <Link
-              href="/"
+              href="#solutions"
               className="flex justify-center items-center px-2 py-1 w-46 bg-yellow-500 text-black font-semibold rounded-full shadow-lg hover:bg-yellow-400 transition"
             >
               Explore Souveral
             </Link>
             <Link
-              href="/"
+              href="/investor"
               className="flex justify-center items-center px-2 py-1 w-30 border text-xs border-yellow-500 text-yellow-500 font-semibold rounded-full shadow-lg hover:bg-yellow-500 hover:text-black transition"
             >
               Partner With Us

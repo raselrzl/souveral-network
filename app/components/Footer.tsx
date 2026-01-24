@@ -71,14 +71,14 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-3 mt-6">
             {/* Discover Opportunities Button */}
             <Link
-              href="/"
+              href="/investor"
               className="flex justify-center items-center px-3 py-1 w-46 border border-yellow-500 text-gray-500 text-sm font-semibold rounded-full shadow hover:bg-gray-500 hover:text-black transition"
             >
               Discover Opportunities
             </Link>
             {/* Contact Us Button */}
             <Link
-              href="/"
+              href="mailto:contact@souveral.com"
               className="flex justify-center items-center px-3 py-1 w-36 bg-yellow-500 text-black text-sm font-semibold rounded-full shadow hover:bg-yellow-400 transition"
             >
               Contact Us
