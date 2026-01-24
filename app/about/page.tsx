@@ -29,9 +29,9 @@ export default function WhoWeArePage() {
         {/* Logo below */}
         <div className="flex justify-center mt-8">
           <img
-            src="/sov.png" 
+            src="/logot.png" 
             alt="Souveral Network"
-            className="w-32 h-32 md:w-48 md:h-48 object-contain"
+            className="w-80 h-80 object-contain"
           />
         </div>
       </div>
