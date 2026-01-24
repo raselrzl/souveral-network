@@ -9,9 +9,9 @@ export const HomeSection: React.FC = () => {
       {/* Background */}
 
       <div
-  className="absolute inset-0 animate-spin"
+  className="absolute inset-0 universe-bg"
   style={{
-    animationDuration: "20s",
+    animationDuration: "120s",
     backgroundImage: `
       radial-gradient(
         circle at center,
@@ -24,7 +24,7 @@ export const HomeSection: React.FC = () => {
     `,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    transform: "scale(1.4)", // 👈 IMPORTANT
+    transform: "scale(1.2)", // 👈 IMPORTANT
   }}
 />
 
