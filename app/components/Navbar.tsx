@@ -91,21 +91,53 @@ const Navbar: React.FC = () => {
           {/* Mobile Menu Button (Hamburger) */}
          <button
   onClick={() => setIsOpen(!isOpen)}
-  className="md:hidden w-8 h-8 relative flex flex-col justify-center items-center"
+  className="md:hidden relative w-10 h-10 flex items-center justify-center focus:outline-none"
   aria-label="Toggle menu"
 >
-  <span
-    className={`block absolute w-8 h-0.5 bg-white rounded-full transition-all duration-500 ease-in-out 
-      ${isOpen ? "rotate-45 top-3" : "top-1"}`}
-  />
-  <span
-    className={`block absolute w-8 h-0.5 bg-white rounded-full transition-all duration-500 ease-in-out
-      ${isOpen ? "opacity-0" : "top-3"}`}
-  />
-  <span
-    className={`block absolute w-8 h-0.5 bg-white rounded-full transition-all duration-500 ease-in-out
-      ${isOpen ? "-rotate-45 top-3" : "top-5"}`}
-  />
+  {/* Face */}
+  <div
+    className={`w-8 h-8 bg-white rounded-full flex items-center justify-center relative transition-all duration-500 ${
+      isOpen ? "scale-90" : "scale-100"
+    }`}
+  >
+    {/* Eyes */}
+    <div
+      className={`absolute left-2 top-2 w-2 h-2 bg-black rounded-full transition-all duration-500 ${
+        isOpen ? "translate-y-0.5" : ""
+      }`}
+    ></div>
+    <div
+      className={`absolute right-2 top-2 w-2 h-2 bg-black rounded-full transition-all duration-500 ${
+        isOpen ? "translate-y-0.5" : ""
+      }`}
+    ></div>
+
+    {/* Eye highlights */}
+    <div className="absolute left-3 top-3 w-0.5 h-0.5 bg-white rounded-full"></div>
+    <div className="absolute right-3 top-3 w-0.5 h-0.5 bg-white rounded-full"></div>
+
+    {/* Nose */}
+    <div className="absolute top-5 w-1.5 h-0.5 bg-black rounded-full"></div>
+
+    {/* Mouth */}
+    <div
+      className={`absolute top-6 w-2.5 h-0.5 bg-black rounded-full transition-all duration-500 ${
+        isOpen ? "scale-x-0" : "scale-x-100"
+      }`}
+    ></div>
+  </div>
+
+  {/* Ears */}
+  <div
+    className={`absolute left-0 top-0 w-3 h-3 bg-black rounded-full transition-transform duration-500 ${
+      isOpen ? "-translate-x-0.5 -translate-y-0.5" : ""
+    }`}
+  ></div>
+  <div
+    className={`absolute right-0 top-0 w-3 h-3 bg-black rounded-full transition-transform duration-500 ${
+      isOpen ? "translate-x-0.5 -translate-y-0.5" : ""
+    }`}
+  ></div>
 </button>
 
         </div>
