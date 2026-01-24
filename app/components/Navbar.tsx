@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
           {/* Logo + Name */}
           <button
             onClick={handleLogoClick}
-            className="flex items-center gap-3"
+            className="flex items-center"
           >
             <img
               src="/sov.png"
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
             <img
               src="/heroo.png"
               alt="Souveral Network"
-              className=" h-30 object-contain mt-6"
+              className="h-30 object-contain mt-4"
             />
 
           </button>
