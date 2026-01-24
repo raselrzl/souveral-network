@@ -140,3 +140,14 @@ body {
   animation: smooth-spin 20s linear infinite;
   will-change: transform;
 }
+
+
+@keyframes fade {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.animate-fade {
+  animation: fade 8s ease-in-out infinite;
+}
+
