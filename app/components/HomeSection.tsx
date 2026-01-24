@@ -55,7 +55,7 @@ export const HomeSection: React.FC = () => {
             infrastructure.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-10 mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 mt-10 pb-10">
             <Link
               href="#solutions"
               className="flex justify-center items-center px-2 py-1 w-46 bg-yellow-500 text-black font-semibold rounded-full shadow-lg hover:bg-yellow-400 transition"
