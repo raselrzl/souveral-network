@@ -9,10 +9,10 @@ export const HomeSection: React.FC = () => {
       {/* Background */}
 
       <div
-  className="absolute inset-0 universe-bg"
-  style={{
-    animationDuration: "120s",
-    backgroundImage: `
+        className="absolute inset-0 universe-bg"
+        style={{
+          animationDuration: "120s",
+          backgroundImage: `
       radial-gradient(
         circle at center,
         rgba(0,0,0,0) 45%,
@@ -22,15 +22,14 @@ export const HomeSection: React.FC = () => {
       ),
       url('/home.jpeg')
     `,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    transform: "scale(1.2)", // 👈 IMPORTANT
-  }}
-/>
-
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          transform: "scale(1.2)",
+        }}
+      />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 md:bg-black/50" />
+      <div className="absolute inset-0 bg-black/60 md:bg-black/60" />
 
       {/* Content */}
       <div className="relative z-10 flex items-center h-full max-w-7xl mx-auto px-6 md:px-12">
