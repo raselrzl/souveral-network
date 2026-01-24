@@ -9,12 +9,15 @@ export const HomeSection: React.FC = () => {
       {/* Background */}
 
       <div
-        className="absolute inset-0 bg-cover bg-center transform rotate-180"
-        style={{ backgroundImage: `url('/hero22.avif')` }}
+        className="absolute inset-0 bg-center transform animate-spin"
+        style={{
+          backgroundImage: `url('/home.jpeg')`,
+          animationDuration: "90s",
+        }}
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70 md:bg-black/80" />
+      <div className="absolute inset-0 bg-black/50 md:bg-black/50" />
 
       {/* Content */}
       <div className="relative z-10 flex items-center h-full max-w-7xl mx-auto px-6 md:px-12">
