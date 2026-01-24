@@ -54,9 +54,13 @@ const Navbar: React.FC = () => {
               alt="Souveral Network"
               className="w-12 h-12 md:w-14 md:h-14 object-contain"
             />
-            <span className="text-sm md:text-base font-semibold tracking-wide uppercase">
-              Souveral
-            </span>
+           
+            <img
+              src="/heroo.png"
+              alt="Souveral Network"
+              className=" h-30 object-contain mt-6"
+            />
+
           </button>
 
           {/* Desktop Navigation */}
