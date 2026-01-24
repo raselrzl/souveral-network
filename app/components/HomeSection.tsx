@@ -8,16 +8,24 @@ export const HomeSection: React.FC = () => {
     <section className="relative w-full h-[65vh] pt-40">
       {/* Background */}
 
-      <div
-        className="absolute inset-0 bg-center transform animate-spin"
-        style={{
-          backgroundImage: `url('/home.jpeg')`,
-          animationDuration: "90s",
-        }}
-      />
+     <div
+  className="absolute inset-0 bg-center bg-cover animate-spin"
+  style={{
+    backgroundImage: `
+      radial-gradient(circle at center,
+        rgba(0,0,0,0) 55%,
+        rgba(0,0,0,0.6) 70%,
+        rgba(0,0,0,1) 100%
+      ),
+      url('/home.jpeg')
+    `,
+    animationDuration: "90s",
+  }}
+/>
+
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/80 md:bg-black/80" />
+      <div className="absolute inset-0 bg-black/50 md:bg-black/50" />
 
       {/* Content */}
       <div className="relative z-10 flex items-center h-full max-w-7xl mx-auto px-6 md:px-12">
