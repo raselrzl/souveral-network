@@ -89,27 +89,25 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Menu Button (Hamburger) */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden flex flex-col gap-1.5"
-            aria-label="Toggle menu"
-          >
-            <span
-              className={`w-6 h-0.5 bg-white transition-transform ${
-                isOpen ? "rotate-45 translate-y-1.5" : ""
-              }`}
-            />
-            <span
-              className={`w-6 h-0.5 bg-white transition-opacity ${
-                isOpen ? "opacity-0" : "opacity-100"
-              }`}
-            />
-            <span
-              className={`w-6 h-0.5 bg-white transition-transform ${
-                isOpen ? "-rotate-45 -translate-y-1.5" : ""
-              }`}
-            />
-          </button>
+         <button
+  onClick={() => setIsOpen(!isOpen)}
+  className="md:hidden w-8 h-8 relative flex flex-col justify-center items-center"
+  aria-label="Toggle menu"
+>
+  <span
+    className={`block absolute w-8 h-0.5 bg-white rounded-full transition-all duration-500 ease-in-out 
+      ${isOpen ? "rotate-45 top-3" : "top-1"}`}
+  />
+  <span
+    className={`block absolute w-8 h-0.5 bg-white rounded-full transition-all duration-500 ease-in-out
+      ${isOpen ? "opacity-0" : "top-3"}`}
+  />
+  <span
+    className={`block absolute w-8 h-0.5 bg-white rounded-full transition-all duration-500 ease-in-out
+      ${isOpen ? "-rotate-45 top-3" : "top-5"}`}
+  />
+</button>
+
         </div>
       </nav>
 
