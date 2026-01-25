@@ -53,7 +53,7 @@ export default function PopupOnViewCom({
       {/* Cat Play Button */}
       <div
         onClick={toggleAudio}
-        className="fixed bottom-6 right-8 z-50
+        className="fixed bottom-6 right-[-2] z-50
                    w-12 h-12 rounded-full
                    text-3xl flex items-center justify-center cursor-pointer
                    shadow-lg hover:scale-110 transition-transform"
