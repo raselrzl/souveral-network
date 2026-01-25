@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer";
 import { WhyChooseSouveralSection } from "./components/WhyChooseSouveralSection";
 import PhilosophySection from "./components/OurPhilosophy";
 import WhySouveralSection from "./components/WhySouveralSection";
+import PopupOnViewServer from "./components/PopupOnView";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <WhySouveralSection />
       <WhyChooseSouveralSection />
       <TransparentEngagementSection />
+      <PopupOnViewServer />
       <PhilosophySection />
       <Footer />
     </div>

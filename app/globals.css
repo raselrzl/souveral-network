@@ -151,3 +151,41 @@ body {
   animation: fade 8s ease-in-out infinite;
 }
 
+/* Bird initial position */
+.animal-walk {
+  position: fixed; /* fixed so it flies over everything */
+  left: -100px; /* start off-screen left */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  pointer-events: none; /* so it doesn't block clicks */
+  z-index: 50; /* above text */
+}
+
+/* Animate left → right in 25s */
+.animate-bird {
+  animation: birdMove 20s linear forwards; /* stops at the end */
+}
+
+/* Keyframes for left → right */
+@keyframes birdMove {
+  from {
+    transform: translate(100px, -50%);
+  }
+  to {
+    transform: translate(110vw, -50%);
+  }
+}
+
+/* Remove black popup bar, just for audio control */
+.popup-audio-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 40; /* under bird */
+  width: 100%;
+  height: 0; /* no height so it's invisible */
+  background: transparent;
+  overflow: visible; /* allow bird to fly outside */
+}
