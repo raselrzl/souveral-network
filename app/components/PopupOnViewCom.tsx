@@ -69,7 +69,7 @@ export default function PopupOnViewCom({
       {playing && (
         <div className="popup-audio-bar">
           <img
-            src="/bird.gif"
+            src="/penguin.gif"
             alt="Flying bird"
             className="animal-walk animate-bird"
           />
