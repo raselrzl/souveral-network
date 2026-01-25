@@ -58,7 +58,11 @@ export default function PopupOnViewCom({
                    text-3xl flex items-center justify-center cursor-pointer
                    shadow-lg hover:scale-110 transition-transform"
       >
-        <span className="animate-ping text-white">🐱</span>
+        <img
+    src="/click.gif"
+    alt="Click to play"
+    className="w-full h-full object-contain"
+  />
       </div>
 
       {/* Moving Bird */}
