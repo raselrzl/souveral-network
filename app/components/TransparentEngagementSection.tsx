@@ -8,12 +8,12 @@ const PROJECTS = [
   {
     title: "News & Media Websites",
     desc: "Global and regional media platforms with editorial control and monetization.",
-    href: "https://www.globaleye.press/",
+    href: "gepnews.com",
   },
   {
     title: "E-Commerce Platform",
     desc: "A fully featured, scalable online shop supporting product catalogues, checkout, and order management.",
-    href: "https://kronstil.store/",
+    href: "https://slize-i0b2vgbnn-rasel-miahs-projects.vercel.app/",
   },
     {
     title: "B2B Car Marketplace",
@@ -24,7 +24,7 @@ const PROJECTS = [
   {
     title: "Workforce Management System",
     desc: "Internal workforce management including attendance, payroll, and role-based access.",
-    href: "/projects/employee-management",
+    href: "https://www.arbetsdesk.com/",
   },
 
   {
@@ -40,7 +40,7 @@ const PROJECTS = [
   {
     title: "Invoice & Billing Management",
     desc: "Automated invoicing, reporting, tax handling, and financial record systems.",
-    href: "/",
+    href: "https://invoice-lilac-six.vercel.app/",
   },
    {
     title: "Advisory & Strategy",
