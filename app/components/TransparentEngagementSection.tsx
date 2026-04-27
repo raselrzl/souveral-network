@@ -8,7 +8,7 @@ const PROJECTS = [
   {
     title: "News & Media Websites",
     desc: "Global and regional media platforms with editorial control and monetization.",
-    href: "gepnews.com",
+    href: "https://gepnews.com/",
   },
   {
     title: "E-Commerce Platform",
@@ -35,7 +35,7 @@ const PROJECTS = [
   {
     title: "Housing & Real Estate Platform",
     desc: "Property listing, booking, and management systems for real estate operations.",
-    href: "/",
+    href: "https://taha-plum.vercel.app/",
   },
   {
     title: "Invoice & Billing Management",
@@ -81,6 +81,7 @@ export const TransparentEngagementSection: React.FC = () => {
             <Link
               key={project.title}
               href={project.href}
+              target="_blank"
               className="
                 group
                 border border-gray-800
