@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Julius_Sans_One } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ArrowUpRight, SquareArrowOutUpRight } from "lucide-react";
+import CanvasCursor from "./components/ui2/CanvasCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+// Fonts
+export const julius = Julius_Sans_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-julius",
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
@@ -27,54 +36,69 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
+        className={`${julius.variable} antialiased bg-black`}
       >
         <div className="max-w-7xl mx-auto">
+          <CanvasCursor />
           <Navbar />
         </div>
         {children}
-         {/* Bottom Bar */}
-      <div className="border-t border-gray-800 py-6 px-6 bg-black">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
-          {/* Left / Center: copyright */}
-          {/* Right: links */}
-          <div className="flex flex-wrap justify-center sm:justify-end gap-4">
-            <a href="/about" className="hover:text-white transition flex">
-              Who we are<SquareArrowOutUpRight
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-800 py-6 px-6 bg-black">
+          <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+            {/* Left / Center: copyright */}
+            {/* Right: links */}
+            <div className="flex flex-wrap justify-center sm:justify-end gap-4">
+              <a href="/about" className="hover:text-white transition flex">
+                Who we are
+                <SquareArrowOutUpRight
                   className="text-gray-500 group-hover:text-gray-200 transition"
                   size={10}
                 />
-            </a>
-            <a href="/cookie-policy" className="hover:text-white transition flex">
-              Cookie Policy<SquareArrowOutUpRight
+              </a>
+              <a
+                href="/cookie-policy"
+                className="hover:text-white transition flex"
+              >
+                Cookie Policy
+                <SquareArrowOutUpRight
                   className="text-gray-500 group-hover:text-gray-200 transition"
                   size={10}
                 />
-            </a>
-            <a href="/investor" className="hover:text-white transition flex">
-              Investor<SquareArrowOutUpRight
+              </a>
+              <a href="/investor" className="hover:text-white transition flex">
+                Investor
+                <SquareArrowOutUpRight
                   className="text-gray-500 group-hover:text-gray-200 transition"
                   size={10}
                 />
-            </a>
-            <a href="/privacy-policy" className="hover:text-white transition flex">
-              Privacy Policy<SquareArrowOutUpRight
+              </a>
+              <a
+                href="/privacy-policy"
+                className="hover:text-white transition flex"
+              >
+                Privacy Policy
+                <SquareArrowOutUpRight
                   className="text-gray-500 group-hover:text-gray-200 transition "
                   size={10}
                 />
-            </a>
-            <a href="/terms-conditions" className="hover:text-white transition flex">
-              Terms & Conditions<SquareArrowOutUpRight
+              </a>
+              <a
+                href="/terms-conditions"
+                className="hover:text-white transition flex"
+              >
+                Terms & Conditions
+                <SquareArrowOutUpRight
                   className="text-gray-500 group-hover:text-gray-200 transition"
                   size={10}
                 />
-            </a>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="text-center sm:text-right sm:mb-0 text-[10px] text-gray-200 bg-black">
-        © {new Date().getFullYear()} Souveral Network. All rights reserved.
-      </div>
+        <div className="text-center sm:text-right sm:mb-0 text-[10px] text-gray-200 bg-black">
+          © {new Date().getFullYear()} Souveral Network. All rights reserved.
+        </div>
       </body>
     </html>
   );

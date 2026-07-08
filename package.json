@@ -9,11 +9,21 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@shadergradient/react": "^2.4.20",
+    "@tsparticles/react": "^4.3.1",
+    "@tsparticles/slim": "^4.3.1",
+    "@types/three": "^0.185.0",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.27.5",
     "lucide-react": "^0.562.0",
+    "motion": "^12.42.2",
     "next": "16.1.4",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.6.0",
+    "three": "^0.185.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

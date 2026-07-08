@@ -8,23 +8,27 @@ const PROJECTS = [
   {
     title: "News & Media Websites",
     desc: "Global and regional media platforms with editorial control and monetization.",
-    href: "https://gepnews.com/",
+    /*  href: "https://gepnews.com/", */
+    href: "/",
   },
   {
     title: "E-Commerce Platform",
     desc: "A fully featured, scalable online shop supporting product catalogues, checkout, and order management.",
-    href: "https://slize-i0b2vgbnn-rasel-miahs-projects.vercel.app/",
+    /* href: "https://slize-i0b2vgbnn-rasel-miahs-projects.vercel.app/", */
+    href: "/",
   },
-    {
+  {
     title: "B2B Car Marketplace",
     desc: "Marketplace infrastructure supporting multiple vendors, payouts, and dashboards.",
-    href: "https://bilvio.se/",
+    /*  href: "https://bilvio.se/", */
+    href: "/",
   },
 
   {
     title: "Workforce Management System",
     desc: "Internal workforce management including attendance, payroll, and role-based access.",
-    href: "https://www.arbetsdesk.com/",
+    /*  href: "https://www.arbetsdesk.com/", */
+    href: "/",
   },
 
   {
@@ -35,14 +39,16 @@ const PROJECTS = [
   {
     title: "Housing & Real Estate Platform",
     desc: "Property listing, booking, and management systems for real estate operations.",
-    href: "https://taha-plum.vercel.app/",
+    /*   href: "https://taha-plum.vercel.app/", */
+    href: "/",
   },
   {
     title: "Invoice & Billing Management",
     desc: "Automated invoicing, reporting, tax handling, and financial record systems.",
-    href: "https://invoice-lilac-six.vercel.app/",
+    /*   href: "https://invoice-lilac-six.vercel.app/", */
+    href: "/",
   },
-   {
+  {
     title: "Advisory & Strategy",
     desc: "We provide strategic guidance on governance, compliance, structuring, and international growth.",
     href: "/",

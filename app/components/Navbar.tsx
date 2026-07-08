@@ -8,9 +8,9 @@ interface NavItem {
   href: string;
 }
 
-const NAV_ITEMS: NavItem[] = [
+const NAV_ITEMS: NavItem[] = [/* 
   { label: "Companies", href: "#companies" },
-  { label: "Capabilities", href: "#about" },
+  { label: "Capabilities", href: "#about" }, */
   { label: "Investors", href: "/investor" },
 ];
 
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur border-b border-gray-800 max-w-7xl mx-auto">
+      <nav className="fixed top-0 w-full z-50 max-w-7xl mx-auto">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-16 md:h-20 flex items-center justify-between text-white">
           {/* Logo + Name */}
           <button onClick={handleLogoClick} className="flex items-center">
@@ -146,7 +146,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="text-3xl text-gray-300 hover:text-white"
             >
-              ✕
+              
             </button>
           </div>
 
