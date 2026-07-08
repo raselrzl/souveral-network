@@ -9,7 +9,7 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Investors", href: "/investor" },
+ /*  { label: "Investors", href: "/investor" }, */
 ];
 
 const Navbar: React.FC = () => {
@@ -87,13 +87,11 @@ const Navbar: React.FC = () => {
             className="md:hidden relative w-10 h-10 flex items-center justify-center focus:outline-none"
             aria-label="Toggle menu"
           >
-            {/* Face */}
             <div
               className={`w-8 h-8 bg-white rounded-full flex items-center justify-center relative transition-all duration-500 ${
                 isOpen ? "scale-90" : "scale-100"
               }`}
             >
-              {/* Eyes */}
               <div
                 className={`absolute left-2 top-2 w-2 h-2 bg-black rounded-full transition-all duration-500 ${
                   isOpen ? "translate-y-0.5" : ""
@@ -104,15 +102,11 @@ const Navbar: React.FC = () => {
                   isOpen ? "translate-y-0.5" : ""
                 }`}
               ></div>
-
-              {/* Eye highlights */}
               <div className="absolute left-3 top-3 w-0.5 h-0.5 bg-white rounded-full"></div>
               <div className="absolute right-3 top-3 w-0.5 h-0.5 bg-white rounded-full"></div>
 
-              {/* Nose */}
               <div className="absolute top-5 w-1.5 h-0.5 bg-black rounded-full"></div>
 
-              {/* Mouth */}
               <div
                 className={`absolute top-6 w-2.5 h-0.5 bg-black rounded-full transition-all duration-500 ${
                   isOpen ? "scale-x-0" : "scale-x-100"
@@ -120,7 +114,6 @@ const Navbar: React.FC = () => {
               ></div>
             </div>
 
-            {/* Ears */}
             <div
               className={`absolute left-0 top-0 w-3 h-3 bg-black rounded-full transition-transform duration-500 ${
                 isOpen ? "-translate-x-0.5 -translate-y-0.5" : ""
@@ -134,11 +127,8 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </nav>
-
-      {/* Mobile Menu Overlay */}
-      {isOpen && (
+{/*       {isOpen && (
         <div className="fixed inset-0 z-40 bg-black text-white md:hidden flex flex-col">
-          {/* Close Button */}
           <div className="flex justify-end p-6">
             <button
               onClick={() => setIsOpen(false)}
@@ -147,8 +137,6 @@ const Navbar: React.FC = () => {
               ✕
             </button>
           </div>
-
-          {/* Mobile Menu Links */}
           <nav className="flex flex-col gap-6 px-6">
             {NAV_ITEMS.map((item) => {
               const isInternal = item.href.startsWith("#");
@@ -173,7 +161,7 @@ const Navbar: React.FC = () => {
             })}
           </nav>
         </div>
-      )}
+      )} */}
     </>
   );
 };
