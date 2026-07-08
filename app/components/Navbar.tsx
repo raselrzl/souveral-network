@@ -8,9 +8,7 @@ interface NavItem {
   href: string;
 }
 
-const NAV_ITEMS: NavItem[] = [/* 
-  { label: "Companies", href: "#companies" },
-  { label: "Capabilities", href: "#about" }, */
+const NAV_ITEMS: NavItem[] = [
   { label: "Investors", href: "/investor" },
 ];
 
@@ -146,7 +144,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="text-3xl text-gray-300 hover:text-white"
             >
-              
+              ✕
             </button>
           </div>
 

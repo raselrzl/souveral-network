@@ -16,10 +16,12 @@ import DefaultMousetrail from "./components/globe/Globe";
 import ShaderGradientComponent from "./components/globe/ShadGradient";
 import HorizontalProgressive from "./components/ui2/HorizontalProgressive";
 import MarqueeDemo from "./components/ui/MarqueeDemo";
+import GlobeDemo from "./components/ui/GlobeDemo";
 
 export default function Home() {
   return (
     <div className="bg-black">
+      
       <ShaderGradientComponent />
       {/* Bottom Wave */}
       <div className="relative h-24 overflow-hidden bg-black">
@@ -67,6 +69,7 @@ export default function Home() {
       <PopupOnViewServer />
       <PhilosophySection />
       <DefaultMousetrail />
+      <GlobeDemo />
       <Footer />
     </div>
   );
