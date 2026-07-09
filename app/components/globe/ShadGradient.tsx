@@ -53,7 +53,7 @@ export default function ShaderGradientComponent() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-white/80 text-left md:text-center">
-          Souveral is a global innovation network and holding structure operating across technology, media, commerce, and digital infrastructure.
+          Souveral is a global innovation network and holding structure operating across technology, media, commerce and digital infrastructure.
         </p>
    
       </div>
