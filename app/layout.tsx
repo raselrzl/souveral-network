@@ -35,11 +35,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${julius.variable} antialiased bg-black`}
-      >
+      <body className={`${julius.variable} antialiased bg-black`}>
         <div className="max-w-7xl mx-auto">
-          <CanvasCursor />
+          <div className="hidden lg:block">
+            <CanvasCursor />
+          </div>
           <Navbar />
         </div>
         {children}
